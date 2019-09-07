@@ -1,0 +1,55 @@
+{
+    "name": "ballshift",
+    "version": "1.0.0",
+    "description": "ballshift the game",
+    "main": "index.js",
+    "author": "iKest <ikestster@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iKest/ballshift.git"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -c -w",
+        "dev": "concurrently \"yarn:start\" \"yarn:watch\"",
+        "start": "serve public",
+        "upgrade": "yarn upgrade-interactive"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.2.3",
+        "concurrently": "^4.1.0",
+        "eslint": "^6.3.0",
+        "eslint-config-airbnb-standard": "^3.0.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-node": "^9.2.0",
+        "eslint-plugin-prettier": "^3.0.0",
+        "eslint-plugin-react": "^7.11.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "prettier": "^1.15.3",
+        "prettier-stylelint": "^0.4.2",
+        "rollup": "^1.5.0",
+        "rollup-plugin-babel": "^4.1.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-builtins": "^2.1.2",
+        "rollup-plugin-node-globals": "^1.4.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-terser": "^5.1.1",
+        "serve": "^11.1.0",
+        "stylelint": "^10.1.0",
+        "stylelint-config-standard": "^18.2.0"
+    },
+    "dependencies": {
+        "@pixi/app": "^5.1.2",
+        "@pixi/loaders": "^5.1.2",
+        "@pixi/ticker": "^5.1.1",
+        "micromodal": "^0.4.0",
+        "pixi.js": "^5.1.2",
+        "rollup-plugin-string": "^3.0.0",
+        "stats-js": "^1.0.1"
+    }
+}

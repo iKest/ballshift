@@ -1,0 +1,37 @@
+{
+    "extends": ["airbnb-standard", "prettier"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-bitwise": ["error", {
+            "int32Hint": true
+        }],
+        "no-plusplus": ["error", {
+            "allowForLoopAfterthoughts": true
+        }],
+        "no-param-reassign": ["error", {
+            "props": false
+        }],
+        "no-underscore-dangle": ["error", {
+            "allowAfterThis": true,
+            "enforceInMethodNames": false
+        }],
+        "prefer-destructuring": ["error", {
+            "AssignmentExpression": {
+                "array": false
+            }
+        }],
+        "consistent-return": ["error", {
+            "treatUndefinedAsUnspecified": true
+        }],
+        "prettier/prettier": ["error"]
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "commonjs": true
+    }
+}

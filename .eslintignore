@@ -1,0 +1,6 @@
+node_modules/
+dist/
+public_html/
+test.js
+src/libs/polyfills/
+src/libs/vec2/
